@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<h1>
+
+</h1>
+
+<app-header>  </app-header>
+<!-- two way binding -->
+fname : <input type="text" fname="name" [{ngModel}]="fname"> <br/>
+lname : <input type="text" lname="lname"[{ngModel}]="lname"> <br/>
+
+<!-- local template variable -->
+fname : <input type="text" name="fname" #fname >
+<button type="button" class="btn btn-large btn-block btn-default" (click)="onSubmit()"> Submit</button>
+</html>
